@@ -74,7 +74,7 @@
       # become: true
 
    # - cron:
-       # name: "Update packages"
+       # name: "Email rmail.log files"
        # minute: "00"
        # hour: "3"
        # weekday: 0
