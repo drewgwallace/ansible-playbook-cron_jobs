@@ -11,8 +11,10 @@ This repository is a WORK IN PROGRESS
 
 ## Invokation
 
-    ansible-playbook add_cron_jobs.yaml -e "play_hosts=ALL" -e "email=ROOT@LOCALHOST"
-    
+<pre>
+    ansible-playbook add_cron_jobs.yaml -e "play_hosts=<b>ALL</b>" -e "email=<b>ROOT@LOCALHOST</b>"
+</pre>
+
   ### Variables:
     play_hosts: Ansible hosts to target in the /etc/ansible/hosts declaration file
     email: Email to target for cron job messages
