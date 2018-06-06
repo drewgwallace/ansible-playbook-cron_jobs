@@ -2,21 +2,26 @@ This repository is a WORK IN PROGRESS
 
 ----
 
-# Ansible Playbook
+# Ansible Role
 
 ## Purpose
-  This play is the start to some basic cron jobs that would be useful for most any server running apt-get (Debian based). It is meant to integrate with my [ansible postfix](https://github.com/drewgwallace/ansible-playbook-postfix_nullclient) playbook to generate periodic email updates.
+  This role is the start to some basic cron jobs that would be useful for most any server running apt-get (Debian based). It is meant to integrate with my [ansible postfix](https://github.com/drewgwallace/ansible-playbook-postfix_nullclient) playbook to generate periodic email updates.
 
 ----
 
 ## Invokation
 
 <pre>
-    ansible-playbook add_cron_jobs.yaml -e "play_hosts=<b>ALL</b>" -e "email=<b>ROOT@LOCALHOST</b>"
+    - hosts: all
+      tasks:
+      - include_role:
+          name: drewgwallace.ansible-role-add_monitoring_services
+          vars:
+            email: "root@localhost"
 </pre>
 
   ### Variables:
-    play_hosts: Ansible hosts to target in the /etc/ansible/hosts declaration file
+  
     email: Email to target for cron job messages
 
 ----
