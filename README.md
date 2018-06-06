@@ -15,7 +15,7 @@ This repository is a WORK IN PROGRESS
     - hosts: all
       tasks:
       - include_role:
-          name: drewgwallace.ansible-role-add_monitoring_services
+          name: drewgwallace.ansible-role-cron_jobs
           vars:
             email: "root@localhost"
 </pre>
