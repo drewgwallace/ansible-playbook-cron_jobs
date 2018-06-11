@@ -1,0 +1,6 @@
+---
+# Purpose: Default variable for cron jobs
+# Last Updated: 2018.06.11
+# Notes:
+
+email: root@localhost

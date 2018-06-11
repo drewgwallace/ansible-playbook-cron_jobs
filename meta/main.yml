@@ -1,4 +1,9 @@
 ---
+# Purpose: Meta information for cron jobs for Ansible Galaxy
+# Last Updated: 2018.06.11
+# Notes:
+
+
 dependencies: []
 
 galaxy_info:
