@@ -1,7 +1,9 @@
-# This playbook is intended to maintain a consistent set of cron jobs across the target group
-
+# Purpose: This playbook is intended to maintain a consistent set of cron jobs across
+# the target group
+# Last Updated: 2018.06.11
+# Notes:
 ---  
-  # Change hosts to target group
+
 
   - cron:
       name: "MAILTO"
@@ -75,6 +77,7 @@
      # minute: "00"
      # hour: "3"
      # weekday: 0
-     # job: '"find /var/log/ -maxdepth 1 -name \"*.rmail.log\" -print -exec cat -n {} \; -exec echo \; | mail -s \"$(date +'\%Y_\%m_\%d__\%H_\%M_\%S') $HOSTNAME\" {{ email }} 2>&1"'
+     # job: '"find /var/log/ -maxdepth 1 -name \"*.rmail.log\" -print -exec cat -n {} \; \
+     # -exec echo \; | mail -s \"$(date +'\%Y_\%m_\%d__\%H_\%M_\%S') $HOSTNAME\" {{ email }} 2>&1"'
      # state: present
      # user: root
