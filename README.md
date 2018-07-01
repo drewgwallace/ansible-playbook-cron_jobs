@@ -16,8 +16,8 @@ This repository is a WORK IN PROGRESS
       tasks:
       - include_role:
           name: drewgwallace.ansible-role-cron_jobs
-          vars:
-            email: "root@localhost"
+        vars:
+          email: "root@localhost"
 </pre>
 
   ### Variables:
