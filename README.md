@@ -9,7 +9,7 @@ This repository is a WORK IN PROGRESS
 
 ----
 
-## Invokation
+## Invocation
 
 <pre>
     - hosts: all
