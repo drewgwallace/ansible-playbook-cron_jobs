@@ -3,7 +3,7 @@ dependencies: []
 
 galaxy_info:
   author: drewgwallace
-  description: Configure cron jobs
+  description: Configure cron jobs.
   galaxy_tags:
     - system
     - updates
