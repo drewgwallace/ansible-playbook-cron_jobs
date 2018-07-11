@@ -9,7 +9,6 @@ dependencies: []
 galaxy_info:
   author: drewgwallace
   description: Configure cron jobs.
-  company: Self
   license: MIT
   min_ansible_version: 2.4
   platforms:
